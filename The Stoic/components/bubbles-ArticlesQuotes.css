@@ -1,0 +1,51 @@
+html {
+    --bubbles: orange;
+    --otherBubbles: #05da93;
+    --borders: rgb(211, 137, 0);
+    --lightText: rgb(255, 255, 255);
+    --links: rgb(73, 63, 186);
+}
+
+.bubble-articles,
+.bubble-quotes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.bubble-article-card,
+.bubble-quote-card {
+    width: 350px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background: var(--bubbles);
+    border-radius: 15px;
+    border: 2px solid var(--borders);
+
+}
+
+.wrap {
+    height: 95px;
+    overflow: hidden;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--lightText);
+}
+
+.see-more {
+    text-align: right;
+}
+
+.see-more a {
+    text-decoration: none;
+}
+
+.see-more a:link,
+.see-more a:visited,
+.see-more a:hover,
+.see-more a:focus,
+.see-more a:active {
+    color: var(--links);
+}
